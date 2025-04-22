@@ -1,0 +1,638 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEN TECH AGRIC COMPANY - Innovative Agricultural Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="photo/IMG-20250307-WA0008.jpg">
+
+</head>
+
+<div class="home">
+
+  <div class="dropdown">
+    <a href="#">Home</a>
+    <div class="dropdown-content">
+      <a href="home.html">New Arrivals</a>
+    
+    
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <a href="services.html">Services</a>
+    <div class="dropdown-content">
+      
+     
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <a href="#products">Products</a>
+    <div class="dropdown-content">
+      <a href="tractor.html">Tractors & Implements</a>
+      <a href="irragation.html">Irrigation Systems & Hand tools</a>
+     
+
+    </div>
+  </div>
+
+ 
+  <div class="dropdown">
+    <a href="about.html">About Us</a>
+    <div class="dropdown-content">
+
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="contact.html">Contact</a>
+  
+  </div>
+
+
+  <a class="login-btn" href="Forms.html">LOGIN/REGISTER</a>
+</div>
+
+</div>
+<br>
+
+
+    <header class="head">
+        <img src="photo/IMG-20250307-WA0008.jpg" alt="Ben Tech Agric Company Logo">
+        <marquee behavior="scroll" direction="left">BEN TECH AGRIC COMPANY - Innovative Agricultural Solutions</marquee>
+    </header>
+
+   
+</head>
+<div class="one">
+<div style="text-align: center; margin: 20px 0;">
+  <div style="display: inline-flex; align-items: center; max-width: 600px; width: 100%;">
+    <div style="position: relative; flex-grow: 1;">
+      <input 
+        type="text" 
+        placeholder="Search for products, brands..." 
+        style="
+          width: 100%;
+          padding: 12px 20px 12px 40px;
+          border: 2px solid #4CAF50;
+          border-radius: 25px;
+          font-size: 16px;
+          outline: none;
+          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          margin-top:0%;
+        "
+      >
+      <span style="
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #777;
+      ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </span>
+    </div>
+    <button 
+      style="
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 25px;
+        margin-left: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      "
+      onmouseover="this.style.backgroundColor='#3e8e41'" 
+      onmouseout="this.style.backgroundColor='#4CAF50'"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+      Search
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+<body style="
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(rgba(0, 50, 0, 0.8), rgba(0, 30, 0, 0.8)), url('agriculture-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+">
+
+<div id="mainContainer" style="
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(0, 80, 0, 0.6);
+    max-width: 1200px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+">
+    <h1 style="
+        text-align: center;
+        font-size: 2.5em;
+        color: #ffd700;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        border-bottom: 3px solid #ffffff;
+        padding-bottom: 10px;
+    ">
+        BEN TECH AGRI COMPANY
+    </h1>
+
+    <!-- Add your content here -->
+
+</div>
+
+<script>
+    // Interactive border animation
+    const container = document.getElementById('mainContainer');
+    
+    // Animate border color on scroll
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY || window.pageYOffset;
+        container.style.borderColor = `hsl(${scrollY % 360}, 70%, 50%)`;
+    });
+
+    // Hover effect for sections
+    document.querySelectorAll('.section').forEach(section => {
+        section.addEventListener('mouseover', () => {
+            section.style.transform = 'scale(1.02)';
+            section.style.boxShadow = '0 0 15px rgba(255, 215, 0, 0.5)';
+        });
+        
+        section.addEventListener('mouseout', () => {
+            section.style.transform = 'scale(1)';
+            section.style.boxShadow = 'none';
+        });
+    });
+
+    // Dynamic background rotation
+    const backgrounds = [
+        'linear-gradient(rgba(0, 50, 0, 0.8), rgba(0, 30, 0, 0.8)), url("field1.jpg")',
+        'linear-gradient(rgba(0, 50, 0, 0.8), rgba(0, 30, 0, 0.8)), url("field2.jpg")',
+        'linear-gradient(rgba(0, 50, 0, 0.8), rgba(0, 30, 0, 0.8)), url("harvest.jpg")'
+    ];
+ 
+    let currentBg = 0;
+    setInterval(() => {
+        document.body.style.backgroundImage = backgrounds[currentBg];
+        currentBg = (currentBg + 1) % backgrounds.length;
+    }, 5000);
+</script>
+
+
+
+
+    
+       <div class="slideshow-container">
+       <div class="mySlides">
+         <div class="numbertext">1 / 3</div>
+         <img src="photo/a26f40cd_800_457.jpg" width=100% height=300px margin-right="50px">
+         <div class="text">BEN TECH AGRIC COMPANY (TECHNOLOGY)</div>
+       </div>
+       
+       <div class="mySlides">
+         <div class="numbertext">2 / 3</div>
+         <img src="photo/tractor-equipment-implements-farm-disc-harrow-subsoiler-flat-lifter-roller-trailer-101417601.webp" style="width:100%" height="300px" margin-right="50px">
+         <div class="text">ORDER YOURSELF WELL EQUIPED MACHINES</div>
+       </div>
+       
+       <div class="mySlides">
+         <div class="numbertext">3 / 3</div>
+         <img src="photo/istockphoto-2155084548-612x612.webp" style="width:100%" height="300px"margin-right="50px" >
+         <div class="text">AGRICULTURE ,UGANDAS BASED ECONOMY</div>
+       </div>
+       
+       </div>
+       <br>
+       
+       <div style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+       </div>
+       
+       <script>
+       let slideIndex = 0;
+       showSlides();
+       
+       function showSlides() {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+         }
+         slideIndex++;
+         if (slideIndex > slides.length) {slideIndex = 1}    
+         for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+         setTimeout(showSlides, 2000); // Change image every 2 seconds
+       }
+       </script>
+
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to Ben Tech Agric Company</h1>
+      <p>Your trusted partner for modern agricultural solutions and innovative farming technologies</p>
+      <a href="#services" class="btn">Our Services</a>
+    </section>
+
+    <section id="services">
+      <h2 style="text-align: center; margin-bottom: 30px; color: #2e8b57;">Our Agricultural Services</h2>
+      <div class="services" id="slider-container">
+        <div class="service-card">
+          <h3>Modern Farming Equipment</h3>
+          <img src="photo/a26f40cd_800_457.jpg" alt="Modern Equipment">
+          <p>Our range of smart tractors and precision tools are built to increase yield with less effort.</p>
+        </div>
+        <div class="service-card">
+          <h3>Agricultural Consultancy</h3>
+          <img src="photo/agricfarm-website-template-1.jpg" alt="Consultancy">
+          <p>Let our experts guide your farming journey through scientific and practical knowledge.</p>
+        </div>
+        <div class="service-card">
+          <h3>Organic Solutions</h3>
+          <img src="photo/sddefault.jpg" alt="Organic Farming">
+          <p>Adopt our green methods for healthier crops, better soil, and a cleaner environment.</p>
+        </div>
+        <div class="service-card">
+          <h3>Training Programs</h3>
+          <img src="photo/img4.jpg" alt="Farmer Training">
+          <p>We empower farmers with modern agricultural practices through hands-on training.</p>
+        </div>
+      </div>
+  
+
+   
+      
+  </main>
+
+  <script>
+    const backgrounds = ["#f0fdf4", "#f9f9f9", "#e6ffed", "#f4fff3"];
+    let currentBg = 0;
+
+    setInterval(() => {
+      currentBg = (currentBg + 1) % backgrounds.length;
+      document.body.style.backgroundColor = backgrounds[currentBg];
+    }, 6000); // Change background every 6 seconds
+
+    // Optional: Auto-slide service cards if needed (basic horizontal scroll effect)
+    const slider = document.getElementById('slider-container');
+    let scrollAmount = 0;
+    setInterval(() => {
+      slider.scrollBy({ left: 300, behavior: 'smooth' });
+      scrollAmount += 300;
+      if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+        scrollAmount = 0;
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+      }
+    }, 5000); // Slide every 5 seconds
+  </script>
+
+
+
+
+      <div style="background-color: darkslategrey; border: 2px solid #f2f2f2; border-radius: 10px; padding: 25px; margin: 20px 0; font-family: Arial, sans-serif; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
+      
+        <div style="flex: 1; min-width: 250px;">
+            <h3 style="color: aliceblue; font-size: 24px; margin-bottom: 15px; border-bottom: 1px solid #4CAF50; padding-bottom: 10px;">
+                No Middleman • Direct From Manufacturer
+            </h3>
+            <p style="color: #f2f2f2; line-height: 1.6; margin-bottom: 20px;">
+                As the one-stop-shop for your agricultural machinery needs, we eliminate unnecessary costs by connecting you directly with manufacturers.
+            </p>
+            
+          
+            <div style="background-color: rgba(0,0,0,0.2); padding: 15px; border-left: 3px solid #4CAF50; margin: 20px 0; border-radius: 0 5px 5px 0;">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                    <img style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;" src="photo/pm_1743738265866_cmp.jpg" alt="CEO Portrait">
+                    <div>
+                        <p style="color: #4CAF50; font-weight: bold; margin: 0;">CEO, BEN TECH AGRIC COMPANY</p>
+                        <a href="#" style="color: lightblue; text-decoration: none; font-size: 14px;">Send Message</a>
+                    </div>
+                </div>
+                <p style="color: #f2f2f2; font-style: italic; margin: 0;">
+                    "My clients should never buy products through middlemen - it's unnecessarily costly and reduces your profit margins."
+                </p>
+            </div>
+            
+            
+            <a href="#get-an-instant-quote" style="display: inline-block; background-color: #4CAF50; color: white; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-weight: bold; transition: background-color 0.3s; text-align: center;">
+                GET AN INSTANT QUOTE →
+            </a>
+        </div>
+        
+       
+        <div style="flex: 1; min-width: 250px; text-align: center;">
+            <img src="photo/walkingtractor-removebg-preview.webp" alt="Walking Tractor" style="max-width: 100%; height: auto; max-height: 250px; object-fit: contain;">
+            <p style="color: #f2f2f2; margin-top: 10px; font-size: 14px;">
+                <strong>Direct-from-factory prices</strong> on all agricultural equipment
+            </p>
+        </div>
+    </div>
+       </div>
+       <br>
+    
+    
+       
+         <!-- Featured Categories Section -->
+         <div class="featured-categories">
+           <h2 class="featured-title">Featured Categories</h2>
+           
+           <div class="categories-container">
+             <div class="category-item">
+               <img src="photo/AGROCHEMICALS.jpg" alt="Agro-Chemicals" class="category-img">
+               <div class="category-name">AGRO-CHEMICALS</div>
+             </div>
+             <div class="category-item">
+               <img src="photo/BIO-INSECTICIDES.jpg" alt="Bio-Insecticides" class="category-img">
+               <div class="category-name">BIO-INSECTICIDES</div>
+             </div>
+             <div class="category-item">
+               <img src="photo/FUNGICIDES.jpg" alt="Fungicides" class="category-img">
+               <div class="category-name">FUNGICIDES</div>
+             </div>
+             <div class="category-item">
+               <img src="photo/20200317_110002-768x576.webp" alt="Farm Inputs" class="category-img">
+               <div class="category-name">FARM INPUTS</div>
+             </div>
+             <div class="category-item">
+               <img src="photo/BIO-INSECTICIDES.jpg" alt="Bio-Fungicides" class="category-img">
+               <div class="category-name">BIO-FUNGICIDES</div>
+             </div>
+           </div>
+       
+           <a href="drug.html" class="view-more-btn">READ MORE</a>
+         </div>
+       
+         <!-- Heavy Equipment Section -->
+         <div class="heavy-section">
+           <h2>Heavy Equipment</h2>
+           <div class="heavy-slider" id="heavySlider">
+             <div class="hev">
+               <img src="photo/harvest.webp" alt="Harvestor">
+               <p>Harvestor</p>
+               <div class="hev-description">Efficient crop harvesting with advanced machinery.</div>
+             </div>
+             <div class="hev">
+               <img src="photo/garden-tool.webp" alt="Garden Tool">
+               <p>Garden Tool</p>
+               <div class="hev-description">Essential tools for small-scale and backyard gardening.</div>
+             </div>
+             <div class="hev">
+               <img src="photo/walkingtractor-removebg-preview.webp" alt="Walking Tractor">
+               <p>Walking Tractor</p>
+               <div class="hev-description">Compact and powerful tractor ideal for small plots.</div>
+             </div>
+             <div class="hev">
+               <img src="photo/water_pump-e1688373325129.webp" alt="Water Pump">
+               <p>Water Pump</p>
+               <div class="hev-description">Reliable water pumping systems for irrigation.</div>
+             </div>
+             <div class="hev">
+               <img src="photo/cover-e1688449080893.webp" alt="Cover">
+               <p>Cover</p>
+               <div class="hev-description">Protect your equipment and crops with durable covers.</div>
+             </div>
+          
+           </div>
+         </div>
+       
+         <!-- Optional Auto Slide Script -->
+         <script>
+           const slider = document.getElementById('heavySlider');
+           let scrollAmount = 0;
+       
+           function autoSlide() {
+             scrollAmount += 1;
+             if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+               scrollAmount = 0;
+             }
+             slider.scrollTo({
+               left: scrollAmount,
+               behavior: 'smooth'
+             });
+           }
+       
+           setInterval(autoSlide, 30);
+         </script>
+       
+     
+       
+
+      <a style="margin-left: 50%;" href="heavy.html" class="view-more-btn">READ MORE</a>
+<br></br>
+
+
+
+
+  <header>
+    <h1><i class="fas fa-leaf"></i> Ben Tech Agric Monitor</h1>
+    <p>Real-time Weather | Season Tracker | Farming Indicators</p>
+  </header>
+
+  <section class="section">
+    <!-- Weather -->
+    <div class="card">
+      <i class="fas fa-cloud-sun"></i>
+      <h2>Today's Weather</h2>
+      <div class="info" id="weather">Loading...</div>
+    </div>
+
+    <!-- Real-time Clock -->
+    <div class="card">
+      <i class="fas fa-clock"></i>
+      <h2>Current Time</h2>
+      <div class="info" id="dateTime"></div>
+    </div>
+
+    <!-- Day Counter -->
+    <div class="card">
+      <i class="fas fa-seedling"></i>
+      <h2>Season Day Counter</h2>
+      <div class="info">Since: March 1, 2025</div>
+      <div class="info highlight" id="dayCount">...</div>
+    </div>
+
+    <!-- Soil Moisture (Simulated) -->
+    <div class="card">
+      <i class="fas fa-tint"></i>
+      <h2>Soil Moisture</h2>
+      <div class="info">💧 <span class="highlight">45%</span> (ideal)</div>
+    </div>
+
+    <!-- Rainfall (Simulated) -->
+    <div class="card">
+      <i class="fas fa-cloud-showers-heavy"></i>
+      <h2>Rainfall Estimate</h2>
+      <div class="info">🌧️ <span class="highlight">12 mm</span> today</div>
+    </div>
+
+    <!-- Temperature Placeholder -->
+    <div class="card">
+      <i class="fas fa-thermometer-half"></i>
+      <h2>Field Temperature</h2>
+      <div class="info">🌡️ <span class="highlight">27°C</span> avg</div>
+    </div>
+  </section>
+
+  <script>
+    // Real-time Clock
+    function updateDateTime() {
+      const now = new Date();
+      const dateTimeString = now.toLocaleString();
+      document.getElementById("dateTime").textContent = dateTimeString;
+    }
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+
+    // Day Counter
+    const seasonStart = new Date("2025-03-01");
+    function updateDayCount() {
+      const now = new Date();
+      const diffTime = now - seasonStart;
+      const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+      document.getElementById("dayCount").textContent = `${diffDays} days`;
+    }
+    updateDayCount();
+
+    // Weather API
+    const apiKey = "YOUR_API_KEY"; // Replace this with your OpenWeatherMap API key
+    const city = "Kampala";
+
+    async function fetchWeather() {
+      try {
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+        const data = await res.json();
+        const weatherDesc = data.weather[0].description;
+        const temp = data.main.temp;
+        const icon = data.weather[0].icon;
+        const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+
+        document.getElementById("weather").innerHTML = `
+          <img src="${iconUrl}" alt="icon" style="width: 40px; vertical-align: middle;">
+          <span class="highlight">${weatherDesc}</span>,
+          <span class="highlight">${temp}°C</span>
+        `;
+      } catch (error) {
+        document.getElementById("weather").textContent = "Weather info unavailable.";
+        console.error("Weather API error:", error);
+      }
+    }
+
+    fetchWeather();
+  </script>
+
+
+
+
+
+
+
+
+  <section class="map-section">
+    <div class="location-icon">📍</div>
+    <h2>Visit Us in Kampala, Uganda</h2>
+    <p>Our headquarters are located in the heart of Kampala. Feel free to drop by for a consultation or partnership!</p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.9381275102!2d32.57021108433432!3d0.3475963522273237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbbe6acbd431f%3A0x1db1365f5241e85c!2sKampala!5e0!3m2!1sen!2sug!4v1713180742094!5m2!1sen!2sug" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+
+  
+    <footer id="main-footer">
+      <button class="theme-switcher" onclick="toggleTheme()">Switch Theme</button>
+      <div class="footer-container" id="footer-content">
+        <!-- Company Info -->
+        <div class="footer-info">
+          <h3>BEN TECH AGRICULTURAL COMPANY</h3>
+          <p>Address: Plot 2456, KAMPALA, Uganda</p>
+          <p>Phone: +256 775133819<br>+256 74824073</p>
+          <p>Email: <a href="mailto:info@bentechagricultural.com">info@bentechagricultural.com</a></p>
+        </div>
+  
+        <!-- Social Links -->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+  
+        <!-- Copyright -->
+        <div class="footer-bottom">
+          <p>&copy; <span id="year"></span> BEN TECH AGRIC COMPANY. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  
+    <!-- JavaScript Enhancements -->
+    <script>
+      // Dynamic Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+  
+      // Scroll Reveal Animation
+      window.addEventListener('scroll', () => {
+        const footerContent = document.getElementById('footer-content');
+        const footerTop = footerContent.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+  
+        if (footerTop < windowHeight - 100) {
+          footerContent.style.opacity = 1;
+          footerContent.style.transform = 'translateY(0)';
+        }
+      });
+  
+      // Theme Toggle
+      function toggleTheme() {
+        const footer = document.getElementById('main-footer');
+        footer.classList.toggle('light-theme');
+      }
+    </script>
+  
+  </body>
+  </html>
+  
+        
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </body>
+
+
+
+
+</html>

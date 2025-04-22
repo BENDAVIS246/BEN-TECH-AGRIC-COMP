@@ -1,0 +1,377 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEN TECH AGRIC COMPANY - Innovative Agricultural Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="photo/IMG-20250307-WA0008.jpg">
+  
+  </head>
+  
+  <div class="home">
+  
+    <div class="dropdown">
+      <a href="index.html">Home</a>
+      <div class="dropdown-content">
+        <a href="home.html">New Arrivals</a>
+      
+      
+      </div>
+    </div>
+  
+  
+    <div class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+        
+       
+      </div>
+    </div>
+  
+  
+    <div class="dropdown">
+      <a href="#products">Products</a>
+      <div class="dropdown-content">
+        <a href="tractor.html">Tractors & Implements</a>
+        <a href="irragation.html">Irrigation Systems & Hand tools</a>
+       
+  
+      </div>
+    </div>
+  
+   
+    <div class="dropdown">
+      <a href="about.html">About Us</a>
+      <div class="dropdown-content">
+  
+      </div>
+    </div>
+  
+    <div class="dropdown">
+      <a href="contact.html">Contact</a>
+      
+       
+        
+    </div>
+  
+  
+    <a class="login-btn" href="Forms.html">LOGIN/REGISTER</a>
+  </div>
+  
+  </div>
+  <br>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BEN TECH AGRIC - Irrigation & Tools</title>
+      <style>
+          * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+          }
+          body {
+              font-family: 'Arial', sans-serif;
+              background: #f0f8f0;
+              color: #333;
+              line-height: 1.5;
+          }
+          .header {
+              background: #2e8b57;
+              color: white;
+              padding: 15px 0;
+              text-align: center;
+          }
+          .category {
+              background: #3a9d5d;
+              color: white;
+              padding: 8px 0;
+              text-align: center;
+              margin: 5px 0;
+              font-size: 1.2rem;
+          }
+          .products-container {
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+              gap: 5px;
+              padding: 5px;
+          }
+          .product-card {
+              background: white;
+              border-radius: 5px;
+              overflow: hidden;
+              box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+          }
+          .img-box {
+              height: 180px;
+              overflow: hidden;
+              position: relative;
+          }
+          .img-box img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              position: absolute;
+              transition: transform 0.3s;
+          }
+          .product-info {
+              padding: 10px;
+          }
+          .product-name {
+              font-weight: bold;
+              font-size: 1rem;
+              margin-bottom: 3px;
+              color: #2c3e50;
+          }
+          .product-price {
+              color: #e67e22;
+              font-weight: bold;
+              font-size: 0.9rem;
+          }
+          footer {
+              background: #2c3e50;
+              color: white;
+              text-align: center;
+              padding: 15px 0;
+              margin-top: 10px;
+              font-size: 0.9rem;
+          }
+          .footer-content {
+              display: flex;
+              flex-direction: column;
+          }
+          .company-name {
+              font-weight: bold;
+              color: #2ecc71;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="header">
+          <h1>BEN TECH AGRIC EQUIPMENT</h1>
+      </div>
+  
+      <div class="category">IRRIGATION EQUIPMENT</div>
+      <div class="products-container" id="irrigation-container"></div>
+  
+      <div class="category">HAND TOOLS</div>
+      <div class="products-container" id="tools-container"></div>
+  
+      <footer id="main-footer">
+        <button class="theme-switcher" onclick="toggleTheme()">Switch Theme</button>
+        <div class="footer-container" id="footer-content">
+          <!-- Company Info -->
+          <div class="footer-info">
+            <h3>BEN TECH AGRICULTURAL COMPANY</h3>
+            <p>Address: Plot 2456, KAMPALA, Uganda</p>
+            <p>Phone: +256 775133819<br>+256 74824073</p>
+            <p>Email: <a href="mailto:info@bentechagricultural.com">info@bentechagricultural.com</a></p>
+          </div>
+    
+          <!-- Social Links -->
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+    
+          <!-- Copyright -->
+          <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> BEN TECH AGRIC COMPANY. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    
+      <!-- JavaScript Enhancements -->
+      <script>
+        // Dynamic Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    
+        // Scroll Reveal Animation
+        window.addEventListener('scroll', () => {
+          const footerContent = document.getElementById('footer-content');
+          const footerTop = footerContent.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+    
+          if (footerTop < windowHeight - 100) {
+            footerContent.style.opacity = 1;
+            footerContent.style.transform = 'translateY(0)';
+          }
+        });
+    
+        // Theme Toggle
+        function toggleTheme() {
+          const footer = document.getElementById('main-footer');
+          footer.classList.toggle('light-theme');
+        }
+      </script>
+    
+    </body>
+    </html>
+    
+          
+         
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+      <script>
+          // Product data with animation parameters
+          const products = {
+              irrigation: [
+                  {
+                      name: "Farm Irrigation System",
+                      price: "$1,200-$5,000",
+                      src: "tractor/agriculture-food-production-concept-with-tractor-machine-silos-irrigation-system_342744-565.avif",
+                      moveX: 0.03,
+                      moveY: 0.02,
+                      rotate: 0.005
+                  },
+                  {
+                      name: "Greenhouse Watering",
+                      price: "$800-$2,500",
+                      src: "tractor/greenhouse-watering-system-action_392895-398528.avif",
+                      moveX: -0.02,
+                      moveY: 0.03,
+                      rotate: -0.003
+                  },
+                  {
+                      name: "Lawn Sprinkler",
+                      price: "$50-$300",
+                      src: "tractor/realistic-sprinkler-illustration_52683-111287.avif",
+                      moveX: 0.04,
+                      moveY: -0.01,
+                      rotate: 0.004
+                  },
+                  {
+                      name: "Drip Irrigation Kit",
+                      price: "$100-$500",
+                      src: "tractor/download.webp",
+                      moveX: -0.035,
+                      moveY: -0.015,
+                      rotate: 0.002
+                  }
+              ],
+              tools: [
+                  {
+                      name: "Wheelbarrow",
+                      price: "$80-$200",
+                      src: "tractor/Wheelbarrow-600x400.webp",
+                      moveX: 0.025,
+                      moveY: -0.025,
+                      rotate: -0.002
+                  },
+                  {
+                      name: "Hand Trowel",
+                      price: "$10-$25",
+                      src: "tractor/Hand-Trowel-768x512.webp",
+                      moveX: -0.03,
+                      moveY: 0.02,
+                      rotate: 0.003
+                  },
+                  {
+                      name: "Garden Fork",
+                      price: "$25-$60",
+                      src: "tractor/Garden-Fork-768x512.webp",
+                      moveX: 0.02,
+                      moveY: 0.03,
+                      rotate: -0.001
+                  },
+                  {
+                      name: "Pruning Shears",
+                      price: "$15-$50",
+                      src: "tractor/Pruning-Shears-768x512.webp",
+                      moveX: -0.015,
+                      moveY: -0.025,
+                      rotate: 0.002
+                  },
+                  {
+                      name: "Garden Rake",
+                      price: "$20-$45",
+                      src: "tractor/Garden-Rake-768x512.webp",
+                      moveX: 0.018,
+                      moveY: 0.035,
+                      rotate: -0.003
+                  },
+                  {
+                      name: "Shovel",
+                      price: "$30-$70",
+                      src: "tractor/Shovel-768x512.webp",
+                      moveX: -0.028,
+                      moveY: 0.025,
+                      rotate: 0.001
+                  }
+              ]
+          };
+  
+          // Create product cards with smooth animations
+          function createProducts() {
+              // Irrigation products
+              const irrigationContainer = document.getElementById('irrigation-container');
+              products.irrigation.forEach(product => {
+                  const card = createProductCard(product);
+                  irrigationContainer.appendChild(card);
+                  animateImage(card.querySelector('img'), product);
+              });
+  
+              // Tools products
+              const toolsContainer = document.getElementById('tools-container');
+              products.tools.forEach(product => {
+                  const card = createProductCard(product);
+                  toolsContainer.appendChild(card);
+                  animateImage(card.querySelector('img'), product);
+              });
+          }
+  
+          // Create product card element
+          function createProductCard(product) {
+              const card = document.createElement('div');
+              card.className = 'product-card';
+              
+              card.innerHTML = `
+                  <div class="img-box">
+                      <img src="${product.src}" alt="${product.name}">
+                  </div>
+                  <div class="product-info">
+                      <div class="product-name">${product.name}</div>
+                      <div class="product-price">${product.price}</div>
+                  </div>
+              `;
+              
+              return card;
+          }
+  
+          // Smooth image animation
+          function animateImage(img, params) {
+              let time = 0;
+              
+              function animate() {
+                  time += 0.05;
+                  
+                  const x = 5 * Math.sin(time * params.moveX * 10);
+                  const y = 5 * Math.cos(time * params.moveY * 10);
+                  const rot = 2 * Math.sin(time * params.rotate * 10);
+                  
+                  img.style.transform = `
+                      translate(${x}px, ${y}px)
+                      rotate(${rot}deg)
+                  `;
+                  
+                  requestAnimationFrame(animate);
+              }
+              
+              animate();
+          }
+  
+          // Initialize when page loads
+          window.addEventListener('load', createProducts);
+      </script>
+  </body>
+  </html>
+
+

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BEN TECH AGRI COMPANY - Home</title>
+
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEN TECH AGRIC COMPANY - Innovative Agricultural Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="photo/IMG-20250307-WA0008.jpg">
+
+</head>
+
+<div class="home">
+
+  <div class="dropdown">
+    <a href="index.html">Home</a>
+    <div class="dropdown-content">
+      <a href="home.html">New Arrivals</a>
+    
+    
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <a href="services.html">Services</a>
+    <div class="dropdown-content">
+      
+     
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <a href="#products">Products</a>
+    <div class="dropdown-content">
+      <a href="tractor.html">Tractors & Implements</a>
+      <a href="irragation.html">Irrigation Systems & Hand tools</a>
+     
+
+    </div>
+  </div>
+
+ 
+  <div class="dropdown">
+    <a href="about.html">About Us</a>
+    <div class="dropdown-content">
+
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="contact.html">Contact</a>
+    
+     
+    
+  </div>
+
+
+  <a class="login-btn" href="Forms.html">LOGIN/REGISTER</a>
+</div>
+
+</div>
+<br>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2e7d32;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1603297631959-c2b88f9b1e77') no-repeat center center/cover;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background-color: #2e7d32;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px 30px;
+      border-radius: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    /* New Arrivals Section */
+    .new-arrivals {
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    .new-arrivals h2 {
+      color: #2e7d32;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .image-card {
+      position: relative;
+      width: 260px;
+      height: 200px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      animation: moveLeftRight 10s infinite alternate ease-in-out;
+    }
+
+    .image-card:nth-child(even) {
+      animation: moveRightLeft 12s infinite alternate ease-in-out;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .image-description {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-size: 0.95em;
+      text-align: left;
+      transition: opacity 0.5s;
+    }
+
+    @keyframes moveLeftRight {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(40px); }
+    }
+
+    @keyframes moveRightLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-40px); }
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95em;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to BEN TECH AGRI COMPANY</h1>
+    <p>Explore our latest tools and smart farming solutions.</p>
+  </div>
+
+  <!-- New Arrivals Section -->
+  <div class="new-arrivals">
+    <h2>🌾 New Arrivals</h2>
+    <div class="image-container">
+      <div class="image-card">
+        <img src="photo/istockphoto-2157284609-612x612.jpg" alt="Smart Irrigation System">
+        <div class="image-description" id="desc1">Smart Irrigation System - Conserve water, boost yield.</div>
+      </div>
+      <div class="image-card">
+        <img src="photo/istockphoto-1950529964-612x612.webp" alt="Advanced Soil Tester">
+        <div class="image-description" id="desc2">Advanced Soil Tester - Know your soil like never before.</div>
+      </div>
+      <div class="image-card">
+        <img src="photo/istockphoto-2159859018-612x612.jpg" alt="Modern Tractor Tech">
+        <div class="image-description" id="desc3">Modern Tractor Tech - Efficiency meets automation.</div>
+      </div>
+      <div class="image-card">
+        <img src="photo/istockphoto-2157284609-612x612.jpg" alt="Wireless Farm Monitoring">
+        <div class="image-description" id="desc4">Wireless Farm Monitoring - Control from anywhere.</div>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer id="main-footer">
+    <button class="theme-switcher" onclick="toggleTheme()">Switch Theme</button>
+    <div class="footer-container" id="footer-content">
+      <!-- Company Info -->
+      <div class="footer-info">
+        <h3>BEN TECH AGRICULTURAL COMPANY</h3>
+        <p>Address: Plot 2456, KAMPALA, Uganda</p>
+        <p>Phone: +256 775133819<br>+256 74824073</p>
+        <p>Email: <a href="mailto:info@bentechagricultural.com">info@bentechagricultural.com</a></p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> BEN TECH AGRIC COMPANY. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Enhancements -->
+  <script>
+    // Dynamic Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Scroll Reveal Animation
+    window.addEventListener('scroll', () => {
+      const footerContent = document.getElementById('footer-content');
+      const footerTop = footerContent.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (footerTop < windowHeight - 100) {
+        footerContent.style.opacity = 1;
+        footerContent.style.transform = 'translateY(0)';
+      }
+    });
+
+    // Theme Toggle
+    function toggleTheme() {
+      const footer = document.getElementById('main-footer');
+      footer.classList.toggle('light-theme');
+    }
+  </script>
+
+</body>
+</html>
+
+      
+     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- JavaScript for dynamic content -->
+  <script>
+    const descriptions = {
+      desc1: [
+        "Smart Irrigation System - Conserve water, boost yield.",
+        "Automated Watering - Efficient & Sustainable.",
+        "Irrigation Made Easy - Just Set & Forget."
+      ],
+      desc2: [
+        "Advanced Soil Tester - Know your soil.",
+        "Analyze pH, moisture, and fertility instantly.",
+        "Portable Soil Lab - Accurate farm insights."
+      ],
+      desc3: [
+        "Modern Tractor Tech - Powerful & Smart.",
+        "Save fuel, maximize output.",
+        "GPS-enabled Tractor Systems - Precision farming."
+      ],
+      desc4: [
+        "Wireless Farm Monitoring - Full control anytime.",
+        "Mobile alerts for moisture, light, and weather.",
+        "Stay connected to your farm 24/7."
+      ]
+    };
+
+    function rotateDescriptions() {
+      for (let id in descriptions) {
+        const el = document.getElementById(id);
+        const texts = descriptions[id];
+        let index = 0;
+
+        setInterval(() => {
+          index = (index + 1) % texts.length;
+          el.style.opacity = 0;
+          setTimeout(() => {
+            el.textContent = texts[index];
+            el.style.opacity = 1;
+          }, 400);
+        }, 4000);
+      }
+    }
+
+    rotateDescriptions();
+  </script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BEN TECH AGRIC COMPANY - Innovative Agricultural Solutions</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="photo/IMG-20250307-WA0008.jpg">
+      
+      </head>
+      
+      <div class="home">
+      
+        <div class="dropdown">
+          <a href="index.html">Home</a>
+          <div class="dropdown-content">
+            <a href="home.html">New Arrivals</a>
+          
+          
+          </div>
+        </div>
+      
+      
+        <div class="dropdown">
+          <a href="services.html">Services</a>
+          <div class="dropdown-content">
+            
+           
+          </div>
+        </div>
+      
+      
+        <div class="dropdown">
+          <a href="#products">Products</a>
+          <div class="dropdown-content">
+            <a href="tractor.html">Tractors & Implements</a>
+            <a href="irragation.html">Irrigation Systems & Hand tools</a>
+           
+      
+          </div>
+        </div>
+      
+       
+        <div class="dropdown">
+          <a href="about.html">About Us</a>
+          <div class="dropdown-content">
+      
+          </div>
+        </div>
+      
+        <div class="dropdown">
+          <a href="contact.html">Contact</a>
+          
+           
+    
+        </div>
+      
+      
+        <a class="login-btn" href="Forms.html">LOGIN/REGISTER</a>
+      </div>
+      
+      </div>
+      <br>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        fieldset {
+            background-color: #e9e9e9;
+            border: 2px solid darkgreen;
+            color: darkgreen;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #4CAF50;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            display: none;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+        .valid {
+            border-color: #4CAF50;
+        }
+        .invalid {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <div class="container">
+            <h2 style="text-align: center; color: darkgreen;">Submit Your Details</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error" id="nameError">Please enter your name</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required disabled>
+                    <div class="error" id="countryError">Please enter your country</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required disabled>
+                        <option value="">------</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="error" id="genderError">Please select your gender</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required disabled>
+                    <div class="error" id="emailError">Please enter a valid email</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="district">District:</label>
+                    <input type="text" id="district" name="district" required disabled>
+                    <div class="error" id="districtError">Please enter your district</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required disabled>
+                    <div class="error" id="cityError">Please enter your city</div>
+                </div>
+                
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+            
+            <div class="result" id="result">
+                <h3 style="color: darkgreen;">Submitted Data:</h3>
+                <p><strong>Name:</strong> <span id="displayName"></span></p>
+                <p><strong>Country:</strong> <span id="displayCountry"></span></p>
+                <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>District:</strong> <span id="displayDistrict"></span></p>
+                <p><strong>City:</strong> <span id="displayCity"></span></p>
+            </div>
+        </div>
+    </fieldset>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('userForm');
+            const inputs = form.querySelectorAll('input, select');
+            const submitBtn = document.getElementById('submitBtn');
+            
+            // Enable next field when current is valid
+            inputs.forEach((input, index) => {
+                input.addEventListener('input', function() {
+                    if (this.checkValidity()) {
+                        this.classList.add('valid');
+                        this.classList.remove('invalid');
+                        document.getElementById(this.id + 'Error').style.display = 'none';
+                        
+                        // Enable next field if there is one
+                        if (index < inputs.length - 1) {
+                            inputs[index + 1].disabled = false;
+                        }
+                    } else {
+                        this.classList.add('invalid');
+                        this.classList.remove('valid');
+                    }
+                });
+                
+                input.addEventListener('blur', function() {
+                    if (!this.checkValidity()) {
+                        document.getElementById(this.id + 'Error').style.display = 'block';
+                        this.classList.add('invalid');
+                    }
+                });
+            });
+            
+            // Enable first field initially
+            document.getElementById('name').disabled = false;
+            
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                let allValid = true;
+                inputs.forEach(input => {
+                    if (!input.checkValidity()) {
+                        document.getElementById(input.id + 'Error').style.display = 'block';
+                        input.classList.add('invalid');
+                        allValid = false;
+                    }
+                });
+                
+                if (allValid) {
+                    // Display submitted data
+                    document.getElementById('displayName').textContent = document.getElementById('name').value;
+                    document.getElementById('displayCountry').textContent = document.getElementById('country').value;
+                    document.getElementById('displayGender').textContent = document.getElementById('gender').value;
+                    document.getElementById('displayEmail').textContent = document.getElementById('email').value;
+                    document.getElementById('displayDistrict').textContent = document.getElementById('district').value;
+                    document.getElementById('displayCity').textContent = document.getElementById('city').value;
+                    
+                    // Show result
+                    document.getElementById('result').style.display = 'block';
+                    
+                    // Scroll to result
+                    document.getElementById('result').scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Optionally reset form
+                    // form.reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BEN TECH AGRIC COMPANY</title>
+
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEN TECH AGRIC COMPANY - Innovative Agricultural Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="photo/IMG-20250307-WA0008.jpg">
+
+</head>
+
+<div class="home">
+
+  <div class="dropdown">
+    <a href="index.html">Home</a>
+    <div class="dropdown-content">
+      <a href="home.html">New Arrivals</a>
+    
+    
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <a href="services.html">Services</a>
+    <div class="dropdown-content">
+      
+     
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <a href="#products">Products</a>
+    <div class="dropdown-content">
+      <a href="tractor.html">Tractors & Implements</a>
+      <a href="irragation.html">Irrigation Systems & Hand tools</a>
+     
+
+    </div>
+  </div>
+
+ 
+  <div class="dropdown">
+    <a href="about.html">About Us</a>
+    <div class="dropdown-content">
+
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="contact.html">Contact</a>
+    
+  </div>
+
+
+  <a class="login-btn" href="Forms.html">LOGIN/REGISTER</a>
+</div>
+
+</div>
+<br>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      transition: background 1s ease;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #013220;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+    }
+
+    header h1::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #70c265;
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .image-box {
+      position: relative;
+      overflow: hidden;
+      height: 250px;
+      transition: all 1s ease;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    .overlay-text {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .move-left img { animation-name: moveLeft; }
+    .move-right img { animation-name: moveRight; }
+    .move-up img { animation-name: moveUp; }
+    .move-down img { animation-name: moveDown; }
+
+    @keyframes moveLeft {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(-20px); }
+    }
+
+    @keyframes moveRight {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(20px); }
+    }
+
+    @keyframes moveUp {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    @keyframes moveDown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+    }
+
+    .footer {
+      background-color: #013220;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 1rem;
+      margin-top: 40px;
+    }
+    .intro-text {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 20px auto 0;
+  line-height: 1.6;
+  padding: 0 20px;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BEN TECH AGRIC COMPANY SERVICES</h1>
+</header>
+<header>
+    <p class="intro-text">
+      At BEN TECH AGRIC COMPANY, we are dedicated to empowering farmers and transforming agriculture through modern technologies and sustainable practices.
+      Our services include agricultural consulting, precision farming, hydroponics solutions, crop management, and eco-friendly innovations that help boost productivity and profitability for farmers and agribusinesses.
+    </p>
+  </header>
+  
+<div class="container">
+  <div class="image-box move-left">
+    <img src="photo/agric-flyer-design-template-b94ecc54590533dda5b2e11d5315c895.webp" alt="Empowering Farmers">
+    <div class="overlay-text">Empowering Farmers with Innovation</div>
+  </div>
+  <div class="image-box move-right">
+    <img src="photo/agricultural-ads-design-template-bfad7c75656914bafc0a707eea408de3.webp" alt="Sustainable Techniques">
+    <div class="overlay-text">Sustainable Agricultural Techniques</div>
+  </div>
+  <div class="image-box move-up">
+    <img src="photo/agriculture-farming-services-design-template-e96437cbda56a13a81b61c43a2a2434c.jpg" alt="Farming Services">
+    <div class="overlay-text">Reliable Farming Services</div>
+  </div>
+  <div class="image-box move-down">
+    <img src="photo/white-modern-&-minimal-agriculture-consulting-design-template-8ed53baecfc9d0aedd3f7b629b1a14ac.webp" alt="Consulting">
+    <div class="overlay-text">Agri Consulting for Smart Growth</div>
+  </div>
+  <div class="image-box move-left">
+    <img src="photo/white-modern-&-minimal-hydroponic-agriculture-design-template-9698741e08ad1564c9b2181800999ad2.webp" alt="Hydroponics">
+    <div class="overlay-text">Hydroponic Farming Solutions</div>
+  </div>
+</div>
+
+<footer id="main-footer">
+  <button class="theme-switcher" onclick="toggleTheme()">Switch Theme</button>
+  <div class="footer-container" id="footer-content">
+    <!-- Company Info -->
+    <div class="footer-info">
+      <h3>BEN TECH AGRICULTURAL COMPANY</h3>
+      <p>Address: Plot 2456, KAMPALA, Uganda</p>
+      <p>Phone: +256 775133819<br>+256 74824073</p>
+      <p>Email: <a href="mailto:info@bentechagricultural.com">info@bentechagricultural.com</a></p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> BEN TECH AGRIC COMPANY. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript Enhancements -->
+<script>
+  // Dynamic Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Scroll Reveal Animation
+  window.addEventListener('scroll', () => {
+    const footerContent = document.getElementById('footer-content');
+    const footerTop = footerContent.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (footerTop < windowHeight - 100) {
+      footerContent.style.opacity = 1;
+      footerContent.style.transform = 'translateY(0)';
+    }
+  });
+
+  // Theme Toggle
+  function toggleTheme() {
+    const footer = document.getElementById('main-footer');
+    footer.classList.toggle('light-theme');
+  }
+</script>
+
+</body>
+</html>
+
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<script>
+  // Background colors for the body
+  const bodyColors = ["#f4f9f6", "#e0f7f1", "#fffef2", "#f9fff5"];
+  let bodyIndex = 0;
+
+  setInterval(() => {
+    document.body.style.background = bodyColors[bodyIndex];
+    bodyIndex = (bodyIndex + 1) % bodyColors.length;
+  }, 4000);
+
+  // Style image containers dynamically
+  const boxes = document.querySelectorAll('.image-box');
+  const boxColors = ["#c3f7e2", "#daf7e6", "#ecfbd4", "#c1f0f6", "#ffeccf"];
+  const boxBorders = ["2px solid #70c265", "2px solid #54d9c2", "2px solid #f1cc68", "2px solid #6ac6f0"];
+
+  function styleBoxes() {
+    boxes.forEach((box, index) => {
+      box.style.borderRadius = `${15 + (index % 3) * 5}px`;
+      box.style.border = boxBorders[index % boxBorders.length];
+      box.style.backgroundColor = boxColors[index % boxColors.length];
+      box.style.boxShadow = "0 10px 25px rgba(0, 0, 0, 0.1)";
+    });
+  }
+
+  styleBoxes();
+
+  // Optional: refresh styles every few seconds to animate slightly
+  setInterval(() => {
+    styleBoxes();
+  }, 5000);
+</script>
+
+</body>
+</html>
